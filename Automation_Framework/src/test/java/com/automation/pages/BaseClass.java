@@ -18,6 +18,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.beust.jcommander.Parameters;
 
 
 public class BaseClass {
@@ -41,10 +42,15 @@ public class BaseClass {
 
 		
 	}
+	@org.testng.annotations.Parameters({"browser","urlToBeTested"})
+
+	
 	@BeforeClass
-	public void setUp()
+	
+	public void setUp(String browser, String url)
 	{
-		driver= BrowserFactory.startApplication(driver,config.getBrowser(), config.getURL());
+		//driver= BrowserFactory.startApplication(driver,config.getBrowser(), config.getURL());
+		driver= BrowserFactory.startApplication(driver,browser, url);
 	}
 	
 	@AfterMethod

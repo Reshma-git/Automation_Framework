@@ -37,7 +37,7 @@ public class ConfigDataProvider {
 	
 	public String getURL()
 	{
-		return pro.getProperty("qaUrl");
+		return pro.getProperty("URL");
 	}
 	
 	

@@ -2,6 +2,7 @@ package com.automation.testcases;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -14,8 +15,6 @@ import com.automation.utilities.Helper;
 
 public class LoginTestCaseOne extends BaseClass {
 	
-	
-
 	@Test
 	public void loginApp() throws InterruptedException
 	
@@ -35,6 +34,38 @@ public class LoginTestCaseOne extends BaseClass {
 		
 		
 	}
+	/*@Test(priority=2)
+public void logoutApp() throws InterruptedException
+	
+	{
+		
+		logger=report.createTest("Logout to CRM");
+		//System.out.println(driver.getTitle());
+		Logout logoutPage=PageFactory.initElements(driver, Logout.class);	
+		logoutPage.logoutToCRM();
+		
+		
+		logger.info("Logout to CRM");
+		logoutPage.logoutToCRM();
+
+		
+		//loginPage.loginToCRM(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1));
+		//loginPage.loginToCRM("reshma.bhonde@gmail.com","Vit@l4health");
+		logger.pass("Logout Success!!!");
+		
+		//Helper.captureScreenshots(driver);
+		
+		
+	}
+	@Test(priority=2)
+	public void addcart() throws InterruptedException
+	{
+		 p1=new ProductPage(driver);
+		p1.productToCart();
+		
+	}*/
+
+
 	
 
 }

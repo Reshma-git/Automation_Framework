@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-12T11:56:17Z" name="Suite" finished-at="2021-05-12T11:56:40Z" duration-ms="23721">
+  <suite name="Suite" duration-ms="19633" started-at="2021-05-16T05:31:50Z" finished-at="2021-05-16T05:32:09Z">
     <groups>
     </groups>
-    <test started-at="2021-05-12T11:56:17Z" name="Test" finished-at="2021-05-12T11:56:40Z" duration-ms="23721">
+    <test name="Test" duration-ms="19633" started-at="2021-05-16T05:31:50Z" finished-at="2021-05-16T05:32:09Z">
       <class name="com.automation.testcases.LoginTestCaseOne">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@16aa8654]" started-at="2021-05-12T17:26:16Z" name="setUpSuite" finished-at="2021-05-12T17:26:17Z" duration-ms="822" status="PASS">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@548a102f]" name="setUpSuite" is-config="true" duration-ms="443" started-at="2021-05-16T11:01:49Z" finished-at="2021-05-16T11:01:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@16aa8654]" started-at="2021-05-12T17:26:17Z" name="setUp" finished-at="2021-05-12T17:26:24Z" duration-ms="7397" status="PASS">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@548a102f]" name="setUp" is-config="true" duration-ms="17999" started-at="2021-05-16T11:01:50Z" finished-at="2021-05-16T11:02:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginApp()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@16aa8654]" started-at="2021-05-12T17:26:24Z" name="loginApp" finished-at="2021-05-12T17:26:39Z" duration-ms="15040" status="PASS">
+        <test-method status="PASS" signature="loginApp()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@548a102f]" name="loginApp" duration-ms="296" started-at="2021-05-16T11:02:08Z" finished-at="2021-05-16T11:02:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCaseOne@16aa8654]" started-at="2021-05-12T17:26:39Z" name="tearDownMethod" finished-at="2021-05-12T17:26:40Z" duration-ms="568" status="PASS">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCaseOne@548a102f]" name="tearDownMethod" is-config="true" duration-ms="634" started-at="2021-05-16T11:02:08Z" finished-at="2021-05-16T11:02:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestCaseOne.loginApp()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@16aa8654] output={null}]]]>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTestCaseOne.loginApp()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@548a102f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@16aa8654]" started-at="2021-05-12T17:26:40Z" name="tearDown" finished-at="2021-05-12T17:26:40Z" duration-ms="701" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.testcases.LoginTestCaseOne@548a102f]" name="tearDown" is-config="true" duration-ms="693" started-at="2021-05-16T11:02:09Z" finished-at="2021-05-16T11:02:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

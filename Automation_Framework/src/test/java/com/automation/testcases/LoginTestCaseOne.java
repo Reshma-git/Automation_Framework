@@ -34,30 +34,26 @@ public class LoginTestCaseOne extends BaseClass {
 		
 		
 	}
-	/*@Test(priority=2)
-public void logoutApp() throws InterruptedException
+	@Test(priority=2)
+		public void logoutApp() throws InterruptedException
 	
-	{
-		
-		logger=report.createTest("Logout to CRM");
-		//System.out.println(driver.getTitle());
-		Logout logoutPage=PageFactory.initElements(driver, Logout.class);	
-		logoutPage.logoutToCRM();
+			{
+	
 		
 		
 		logger.info("Logout to CRM");
-		logoutPage.logoutToCRM();
+		
 
 		
 		//loginPage.loginToCRM(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1));
 		//loginPage.loginToCRM("reshma.bhonde@gmail.com","Vit@l4health");
-		logger.pass("Logout Success!!!");
+		logger.fail("Logout fail!!!");
 		
 		//Helper.captureScreenshots(driver);
 		
 		
 	}
-	@Test(priority=2)
+	/*@Test(priority=2)
 	public void addcart() throws InterruptedException
 	{
 		 p1=new ProductPage(driver);

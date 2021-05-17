@@ -7,15 +7,17 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.automation.pages.AddProductPage;
 import com.automation.pages.BaseClass;
 import com.automation.pages.LoginPage;
+import com.automation.pages.MegaMenu;
 import com.automation.utilities.BrowserFactory;
 import com.automation.utilities.ExcelDataProvider;
 import com.automation.utilities.Helper;
 
 public class LoginTestCaseOne extends BaseClass {
 	
-	@Test
+	@Test(priority=1)
 	public void loginApp() throws InterruptedException
 	
 	{
@@ -34,29 +36,23 @@ public class LoginTestCaseOne extends BaseClass {
 		
 		
 	}
+	
 	@Test(priority=2)
-		public void logoutApp() throws InterruptedException
-	
-			{
-	
+		public void menuVisit() throws InterruptedException
+		{
+		logger.info("visit megamenu to CRM");
+		MegaMenu megaMenu=PageFactory.initElements(driver, MegaMenu.class);
+		megaMenu.visitToMegaMenu();
 		
-		
-		logger.info("Logout to CRM");
-		
-
-		
-		//loginPage.loginToCRM(excel.getStringData("Login", 0, 0), excel.getStringData("Login", 0, 1));
-		//loginPage.loginToCRM("reshma.bhonde@gmail.com","Vit@l4health");
-		logger.fail("Logout fail!!!");
 		
 		//Helper.captureScreenshots(driver);
 		
 		
 	}
-	/*@Test(priority=2)
+	/*@Test(priority=3)
 	public void addcart() throws InterruptedException
 	{
-		 p1=new ProductPage(driver);
+		AddProductPage p1=PageFactory.initElements(driver, AddProductPage.class);
 		p1.productToCart();
 		
 	}*/

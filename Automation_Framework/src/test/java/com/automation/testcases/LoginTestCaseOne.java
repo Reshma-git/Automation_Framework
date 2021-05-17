@@ -7,7 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.automation.pages.AddProductPage;
+
 import com.automation.pages.BaseClass;
 import com.automation.pages.LoginPage;
 import com.automation.pages.MegaMenu;

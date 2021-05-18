@@ -34,12 +34,12 @@ public class LoginPage {
 	public void loginToCRM(String emailApp, String passApp) throws InterruptedException
 	{
 		
-		Thread.sleep(3000); 
+		Thread.sleep(5000); 
 		logInButton.click();
 		emailAddress.sendKeys(emailApp);
 		pass.sendKeys(passApp);
 		logInButtonNext.click();
-		Thread.sleep(1000); 
+		Thread.sleep(5000); 
 		
 		
        

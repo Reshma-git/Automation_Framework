@@ -9,8 +9,11 @@ import org.testng.annotations.Test;
 
 
 import com.automation.pages.BaseClass;
+import com.automation.pages.LanguagePage;
 import com.automation.pages.LoginPage;
+import com.automation.pages.LogoutPage;
 import com.automation.pages.MegaMenu;
+//import com.automation.pages.MegaMenu;
 import com.automation.utilities.BrowserFactory;
 import com.automation.utilities.ExcelDataProvider;
 import com.automation.utilities.Helper;
@@ -22,7 +25,7 @@ public class LoginTestCaseOne extends BaseClass {
 	
 	{
 		
-		logger=report.createTest("Login to CRM");
+		logger=report.createTest("Login to Schroff");
 		//System.out.println(driver.getTitle());
 		LoginPage loginPage=PageFactory.initElements(driver, LoginPage.class);
 		
@@ -36,26 +39,32 @@ public class LoginTestCaseOne extends BaseClass {
 		
 		
 	}
-	
 	@Test(priority=2)
+	public void languageSelect() throws InterruptedException
+	{
+		logger=report.createTest("Chage Locale");
+		LanguagePage langPage=PageFactory.initElements(driver, LanguagePage.class);
+		langPage.changeLocale();
+	}
+		
+	
+	
+	@Test(priority=3)
 		public void menuVisit() throws InterruptedException
 		{
-		logger.info("visit megamenu to CRM");
+		logger=report.createTest("Menu Visit");
 		MegaMenu megaMenu=PageFactory.initElements(driver, MegaMenu.class);
 		megaMenu.visitToMegaMenu();
 		
 		
-		//Helper.captureScreenshots(driver);
-		
-		
 	}
-	/*@Test(priority=3)
-	public void addcart() throws InterruptedException
+	@Test(priority=4)
+	public void signout() throws InterruptedException
 	{
-		AddProductPage p1=PageFactory.initElements(driver, AddProductPage.class);
-		p1.productToCart();
-		
-	}*/
+		logger=report.createTest("Logout");
+		LogoutPage logoutPage=PageFactory.initElements(driver, LogoutPage.class);
+		logoutPage.doLogout();
+	}
 
 
 	

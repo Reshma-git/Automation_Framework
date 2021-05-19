@@ -63,6 +63,7 @@ public void configureApp() throws InterruptedException
 		logger=report.createTest("Chage Locale");
 		LanguagePage langPage=PageFactory.initElements(driver, LanguagePage.class);
 		langPage.changeLocale();
+		logger.pass("Locale changed");
 	}
 		
 	
@@ -73,6 +74,7 @@ public void configureApp() throws InterruptedException
 		logger=report.createTest("Menu Visit");
 		MegaMenu megaMenu=PageFactory.initElements(driver, MegaMenu.class);
 		megaMenu.visitToMegaMenu();
+		logger.pass("Visited all MegaMenus");
 		
 		
 	}
@@ -82,6 +84,7 @@ public void configureApp() throws InterruptedException
 		logger=report.createTest("Logout");
 		LogoutPage logoutPage=PageFactory.initElements(driver, LogoutPage.class);
 		logoutPage.doLogout();
+		logger.pass("Logout successfully!!!!");
 	}
 
 

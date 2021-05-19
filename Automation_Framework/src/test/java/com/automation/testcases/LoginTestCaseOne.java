@@ -22,21 +22,7 @@ import com.automation.utilities.Helper;
 public class LoginTestCaseOne extends BaseClass {
 	
 	
-	@Test(priority=3)
-public void configureApp() throws InterruptedException
 	
-	{
-		
-		logger=report.createTest("View Cart");
-		//System.out.println(driver.getTitle());
-		CartPage c1=PageFactory.initElements(driver, CartPage.class);
-		
-		c1.viewCart();
-		
-		//Helper.captureScreenshots(driver);
-		
-		
-	}
 	
 	@Test(priority=1)
 	public void loginApp() throws InterruptedException
@@ -65,10 +51,26 @@ public void configureApp() throws InterruptedException
 		langPage.changeLocale();
 		logger.pass("Locale changed");
 	}
+	
+	@Test(priority=5)
+	public void configureApp() throws InterruptedException
+		
+		{
+			
+			logger=report.createTest("View Cart");
+			//System.out.println(driver.getTitle());
+			CartPage c1=PageFactory.initElements(driver, CartPage.class);
+			
+			c1.viewCart();
+			
+			//Helper.captureScreenshots(driver);
+			
+			
+		}
 		
 	
 	
-	@Test(priority=4)
+	@Test(priority=3)
 		public void menuVisit() throws InterruptedException
 		{
 		logger=report.createTest("Menu Visit");
@@ -78,7 +80,7 @@ public void configureApp() throws InterruptedException
 		
 		
 	}
-	@Test(priority=5)
+	@Test(priority=4)
 	public void signout() throws InterruptedException
 	{
 		logger=report.createTest("Logout");

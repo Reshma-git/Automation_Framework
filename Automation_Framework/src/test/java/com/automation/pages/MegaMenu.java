@@ -49,13 +49,6 @@ public class MegaMenu {
 	
 	public void visitToMegaMenu() throws InterruptedException
 	{
-		//cardImage.click();
-		
-		/*Thread.sleep(500); 
-		coveoSearch.sendKeys("10149-337");
-		searchButton.click();*/
-		
-		
 		
 		productsMenu.click();
 		Thread.sleep(500); 

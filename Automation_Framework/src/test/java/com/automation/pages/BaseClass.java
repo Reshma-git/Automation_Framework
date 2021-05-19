@@ -35,7 +35,7 @@ public class BaseClass {
 	{
 		excel=new ExcelDataProvider();
 		config=new ConfigDataProvider();
-		ExtentHtmlReporter extent= new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Report/FrerCRM_"+Helper.getCurrentDateTime()+".html"));
+		ExtentHtmlReporter extent= new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Report/Schroff"+Helper.getCurrentDateTime()+".html"));
 		report=new ExtentReports();
 		report.attachReporter(extent);
 		

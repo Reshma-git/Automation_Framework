@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 
 import com.automation.pages.BaseClass;
+import com.automation.pages.CartPage;
 import com.automation.pages.LanguagePage;
 import com.automation.pages.LoginPage;
 import com.automation.pages.LogoutPage;
@@ -19,6 +20,23 @@ import com.automation.utilities.ExcelDataProvider;
 import com.automation.utilities.Helper;
 
 public class LoginTestCaseOne extends BaseClass {
+	
+	
+	@Test(priority=3)
+public void configureApp() throws InterruptedException
+	
+	{
+		
+		logger=report.createTest("View Cart");
+		//System.out.println(driver.getTitle());
+		CartPage c1=PageFactory.initElements(driver, CartPage.class);
+		
+		c1.viewCart();
+		
+		//Helper.captureScreenshots(driver);
+		
+		
+	}
 	
 	@Test(priority=1)
 	public void loginApp() throws InterruptedException
@@ -49,7 +67,7 @@ public class LoginTestCaseOne extends BaseClass {
 		
 	
 	
-	@Test(priority=3)
+	@Test(priority=4)
 		public void menuVisit() throws InterruptedException
 		{
 		logger=report.createTest("Menu Visit");
@@ -58,7 +76,7 @@ public class LoginTestCaseOne extends BaseClass {
 		
 		
 	}
-	@Test(priority=4)
+	@Test(priority=5)
 	public void signout() throws InterruptedException
 	{
 		logger=report.createTest("Logout");
